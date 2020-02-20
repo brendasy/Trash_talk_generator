@@ -1,0 +1,26 @@
+[
+  {
+    "img": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg",
+    "id": "engineer",
+    "value": "engineer",
+    "for": "engineer",
+    "job": "工程師",
+    "checked": ""
+  },
+  {
+    "img": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg",
+    "id": "designer",
+    "value": "designer",
+    "for": "designer",
+    "job": "設計師",
+    "checked": ""
+  },
+  {
+    "img": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg",
+    "id": "entrepreneur",
+    "value": "entrepreneur",
+    "for": "entrepreneur",
+    "job": "創業家",
+    "checked": ""
+  }
+]

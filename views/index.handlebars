@@ -1,0 +1,31 @@
+<div class="target-container">
+  <form method="POST" action="/">
+    <div class="row">
+
+      {{#each targets}}
+        <div class="col-xl-4 col-md-6">
+          <div class="mb-4 text-center image-width mx-auto position-relative">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="255" src="{{this.img}}"
+              preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+              aria-label="Placeholder: I am a engineer">
+
+            <div class="card-body text-center btn-secondary">
+              <input class="target-checkbox" name="target" id="{{this.id}}" type="radio" value="{{this.value}}"
+                {{#if this.checked}}checked{{/if}}>
+              <label class="target-label" for="{{this.for}}"></label>
+              <label class="target-job" for="{{this.for}}" class="text-light">{{this.job}}</label>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+
+      <div class="row col-lg-8 mx-auto justify-content-center dialog-md-height">
+        <input class="btn btn-danger btn-sm mr-1 px-2" type="submit" value="幹話生成">
+        <div class="alert alert-info mb-0 col-8" role="alert">
+          <span class="mr-2">{{trashTalk}}</span>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>

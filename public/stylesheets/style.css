@@ -1,0 +1,40 @@
+.target-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.target-label {
+  width: 350px;
+  height: 326px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.52);
+}
+
+.target-label:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.target-checkbox:checked + label
+{
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.target-container {
+  margin: 15px 15px;
+}
+
+.image-width{
+  width: 350px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .dialog-md-height{
+    max-width: 384px;
+    max-height: 50px;
+    margin: auto;
+    padding: 0;
+  }
+}
